@@ -1,0 +1,296 @@
+
+html, body {
+    
+    /* background: url(./images/Cornered-Stairs.svg); */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h3{
+    margin:2px 15px;
+}
+a{
+    color: black;
+}
+
+.container {
+    
+    font-family: monospace;
+    display: grid;
+    grid-template-rows: 7vh 60vh 1fr 20vh;
+    grid-template-columns: 99vw ;
+    
+       
+}
+
+nav{
+    
+    grid-row: 1/2;
+    grid-column:1/2;
+   /*  background:rgb(248, 255, 244, 0.5); */
+    
+       
+
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 99vw;
+   /*  height: 60vh; */
+    background-image: url(./images//pipoca.jpg);
+    background-repeat: repeat-x;
+    grid-row: 2/3;
+    grid-column:1/2;
+    
+}
+main{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: rgb(114, 114, 114);
+    width: 99vw;
+
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    /* background: rgb(22, 20, 20); */
+    border-top: 2px solid rgb(90, 90, 90);
+    grid-row: 4/5;
+    grid-column: 1/2;
+    width: 99vw;
+    height: 20vh;
+    background-color: black;
+}
+
+.titulo {
+    color: rgb(0, 0, 0);
+    font-family: 'Bree Serif', serif;
+    
+    font-size: 5vh ;
+    height: 8vh;
+    /* width: 350px;
+    height: 60px; */
+    text-align: start;
+}
+.taskBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-justify: center;
+    height:8vh;
+    width: 90vw;
+    justify-content: flex-end;
+    align-items: center;
+   
+    
+}
+.taskBarItems{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5vh;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-justify: center;
+    padding:0;
+    margin: 2vw;
+}
+.flex {
+    display: flex;
+    align-items: flex-start;
+    align-content: stretch;
+    width: 99vw;;
+    background-image: linear-gradient(to bottom, rgb(248, 255, 244, 0.8), rgb(248, 255, 244, 0.01));
+    
+ 
+
+}
+.block{
+    background:rgb(46, 56, 75);
+    width: 80vh;
+    height: 40vh;
+    border-radius: 3vw 6vh;
+}
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+    
+}
+.blocoPoetico{
+    display: flex;
+    align-items: stretch;
+    flex-flow: row;
+    background-color:#2c666eff;
+
+        
+    margin: 0.75vw 1.5vh;
+    /* border-radius: 1vw 2vh; */
+    width: 13vw;
+    height: 28vh;
+    /* background:rgb(180, 168, 168); */
+    border: 1px ridge rgb(47, 41, 41);
+}
+.internPoetico{ 
+    display: flex;
+    align-items: center;
+    justify-items: stretch;
+    justify-self:stretch ;
+    justify-content: stretch;
+    box-sizing: border-box;
+    text-justify: distribute;
+    position: absolute;
+    overflow: hidden;
+    border: 2px solid black;
+
+    background:white;
+    background-repeat: space;
+    margin: 1vh 2px 2px 1vh;
+    padding: 0;
+    border-radius: 1vw 2vh;
+    width: 10vw;
+    height: 15vh;
+    
+
+
+}
+.tituloPoetico{
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1.8vw;
+    
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-justify: inter-word;
+    
+   
+    overflow: hidden;
+    /* font: #fe4a49ff; */
+
+    margin: 1vh 1vw
+
+}
+.textoPoetico{
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+   /*  font-family: Arial, Helvetica, sans-serif; */
+    text-justify: inter-character;
+    text-align: justify;
+    font-size: 2vh;
+    /* color:  #fe4a49ff; */
+    overflow: hidden;
+
+    margin: 1vw 2vh
+   
+}
+
+.photoPerfil {
+    margin: 2vw 2vh;       
+    width: 12vw;
+   height: 35vh;
+}
+.card{
+    border-radius: 3vw 6vh;
+    align-items: center;
+    height: 40vh;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+}
+#perfil{
+   border-radius: 3vw 6vh;   
+   width: 12vw;
+   height: 35vh;
+}
+.text{
+    display: flex;
+    flex-flow: column;
+    
+    
+    margin: 2.5vh 0.5vw 2.5vh 0.5vw;
+    padding: 2.5vh 0.5vw 2.5vh 1vw;
+
+    width: 23vw;
+    height: 27vh;
+    font: 2vh bold;
+
+}
+.textCard{
+    color: white;
+    line-height: 3vh;
+    font-size: 2vh;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.main{
+    width:60vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerContainer{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    height: 20vh;
+    width: 60vw;
+}
+.footerContent{
+    padding: 1.5vh;
+    font-size: 2vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.iconeInsta{
+    
+    width: 3vw ;
+    height: 5+5vh;
+    margin-left: 1.5vw;
+    margin-bottom: 2vh;
+}
+.iconeGmail{
+    
+    width: 1.7vw ;
+    height: 2.5vh;
+}
+.iconeFace{
+    margin-left: 1.5vw;
+    margin-bottom: 2vh;
+    width: 3vw ;
+    height: 5+5vh;
+}
+.fonteMenor{
+    font-size: 1.52vw;
+}
+.linkFooter{
+    color:white;
+    
+}
+#mint-cream{
+    background-color: #f8fff4ff;
+}
+#ming{
+    background-color:#2c666eff;
+}
+#tart-orange {
+    background-color: #fe4a49ff;
+}
+#mango-tango {
+    background-color: #ff8c42ff;
+}
+#title{
+    
+    margin-bottom: 4vh;
+    margin-top: 3vh;
+    font-family: 'Bree Serif', serif;
+    font-size: 3vw;
+}
+
