@@ -10,26 +10,23 @@ h3{
     margin:2px 15px;
 }
 a{
-    color: black;
+    color: black; 
 }
-
+a:any-link{
+    text-decoration: none;
+}
 .container {
     
     font-family: monospace;
     display: grid;
     grid-template-rows: 7vh 60vh 1fr 20vh;
     grid-template-columns: 99vw ;
-    
-       
+           
 }
-
 nav{
-    
     grid-row: 1/2;
     grid-column:1/2;
-   /*  background:rgb(248, 255, 244, 0.5); */
-    
-       
+   /*  background:rgb(248, 255, 244, 0.5); */     
 
 }
 header{
@@ -55,7 +52,6 @@ main{
     
     
 }
-
 footer{
     display: flex;
     justify-content: center;
@@ -67,19 +63,17 @@ footer{
     width: 99vw;
     height: 20vh;
     background-color: black;
-}
-
+} 
 .titulo {
     color: rgb(0, 0, 0);
     font-family: 'Bree Serif', serif;
-    
     font-size: 5vh ;
     height: 8vh;
     /* width: 350px;
     height: 60px; */
     text-align: start;
 }
-.taskBar {
+.taskBar {     
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -87,11 +81,9 @@ footer{
     height:8vh;
     width: 90vw;
     justify-content: flex-end;
-    align-items: center;
-   
-    
+    align-items: center;    
 }
-.taskBarItems{
+.taskBarItems{    
     font-family: 'Bree Serif', serif;
     font-size: 2.5vh;
     color: rgb(0, 0, 0);
@@ -106,14 +98,15 @@ footer{
     align-content: stretch;
     width: 99vw;;
     background-image: linear-gradient(to bottom, rgb(248, 255, 244, 0.8), rgb(248, 255, 244, 0.01));
-    
- 
 
 }
 .block{
     background:rgb(46, 56, 75);
-    width: 80vh;
-    height: 40vh;
+    width: clamp(25vw, 40vw, 45vw);
+    /* width: 40vw; */
+    height: clamp(20vh, 40vh, 45vh);
+
+
     border-radius: 3vw 6vh;
 }
 .principal{
@@ -179,6 +172,7 @@ footer{
 }
 .textoPoetico{
     text-transform: capitalize;
+    text-decoration: underline;
     font-family: 'Roboto Slab', serif;
    /*  font-family: Arial, Helvetica, sans-serif; */
     text-justify: inter-character;
@@ -192,30 +186,43 @@ footer{
 }
 
 .photoPerfil {
-    margin: 2vw 2vh;       
-    width: 12vw;
-   height: 35vh;
+    box-sizing: border-box;
+    grid-column: 2/3;
+    margin: 2vw 2vh;     
+    width: clamp(7vw, 250px, 14.64vw);
+    height: clamp(15vh, 340px, 35vh);  
+    /* width: 12vw;
+   height: 35vh; */
 }
 .card{
+    box-sizing: border-box;
     border-radius: 3vw 6vh;
-    align-items: center;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-around;
     height: 40vh;
+    /* width: clamp(30vw, 45vw, 80vw); */
     display: flex;
+    /* grid-template-columns: 30vw 15vw; */ 
     flex-flow: row-reverse;
-    justify-content: flex-end;
+    
 }
-#perfil{
-   border-radius: 3vw 6vh;   
-   width: 12vw;
-   height: 35vh;
+.perfil{
+    box-sizing: border-box;
+    
+    border-radius: 3vw 6vh;   
+    width: clamp(7vw, 250px, 14.64vw);
+    /* height: 340px; */
+   height: clamp(15vh, 340px, 35vh);
 }
 .text{
+    
     display: flex;
-    flex-flow: column;
+    flex-flow: column; 
+    align-content: stretch; 
     
-    
-    margin: 2.5vh 0.5vw 2.5vh 0.5vw;
-    padding: 2.5vh 0.5vw 2.5vh 1vw;
+    margin: 1vh 0.5vw 2.5vh 0.5vw;
+    padding: 0.1vh 0.5vw 2.5vh 1vw;
 
     width: 23vw;
     height: 27vh;
@@ -223,13 +230,22 @@ footer{
 
 }
 .textCard{
+    box-sizing: border-box;
     color: white;
     line-height: 3vh;
-    font-size: 2vh;
+    text-align: justify;
+    font-size: clamp(0.5rem , 2vh, 1rem);
     font-family: 'Rubik', sans-serif;
-    margin-top: 0;
+    margin: 0;
+    padding-top: 0;
+    /* margin-top: 0; */
     /* font-family: Arial, Helvetica, sans-serif; */
 }
+/* .socialMedia{
+  flex: 1;
+  height: 1fr ;
+
+} */
 .main{
     width:60vw;
     display: flex;
@@ -249,10 +265,10 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.iconeInsta{
+/* .iconeInsta{
     
     width: 3vw ;
-    height: 5+5vh;
+    height: 2.5vh;
     margin-left: 1.5vw;
     margin-bottom: 2vh;
 }
@@ -266,9 +282,9 @@ footer{
     margin-bottom: 2vh;
     width: 3vw ;
     height: 5+5vh;
-}
+} */
 .fonteMenor{
-    font-size: 1.52vw;
+    font-size: 1.51vw;
 }
 .linkFooter{
     color:white;
@@ -292,5 +308,6 @@ footer{
     margin-top: 3vh;
     font-family: 'Bree Serif', serif;
     font-size: 3vw;
+    /* font-size: clamp(2vw , 3vw, 4vw); */
 }
 

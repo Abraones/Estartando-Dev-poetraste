@@ -5,6 +5,12 @@ html, body {
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    color: black; 
+}
+a:any-link{
+    text-decoration: none;
+}
 main{
     grid-row: 2/3;
     grid-column: 1/2;
@@ -35,14 +41,10 @@ main{
        
 }
 
-nav{
-    
-    
+nav{ 
     grid-row: 1/2;
     grid-column:1/2;
-   /*  background:rgb(248, 255, 244, 0.5); */
-    
-       
+   /*  background:rgb(248, 255, 244, 0.5); */     
 
 }
 .titulo {
